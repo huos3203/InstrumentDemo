@@ -50,7 +50,7 @@ static NSString *const kNameCellIdentifier = @"NameCell";
                                           configureCellBlock:^(UITableViewCell *cell, NSString *item, NSIndexPath *indexPath) {
                                               cell.textLabel.text = item;
 
-                                              [weakSelf configureCell];
+                                              [self configureCell];
                                           }];
     }
     return _dataSource;
